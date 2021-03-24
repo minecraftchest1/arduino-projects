@@ -28,12 +28,20 @@ void loop() {
 		digitalWrite(4, HIGH);	// Turn on red led 1
 		digitalWrite(5, HIGH);	// Turn on red led 2
 
-		delay(250);				// Wail for 0.25 secconds
-		// Toggle the leds
-		digitalWrite(4, LOW);	// Turn off red led 1
-		digitalWrite(5, HIGH);	// Turn on red led 2
 		delay(250);
+		flashRedLeds();
 	}
-
 }
 
+void flashRedLeds()
+{
+	while (switchState == HIGH)
+	{
+		digitalWrite(4, LOW);
+		digitalWrite(5, HIGH);
+		delay(250);				// Wail for 0.25 seconds
+		digitalWrite(4, HIGH);
+		digitalWrite(5, LOW);
+	}
+	loop();
+}
