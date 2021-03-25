@@ -30,5 +30,5 @@ void printMessage(String line1, String line2)
 	LCD.clear();
 	LCD.print(line1);
 	LCD.setCursor(0,1);
-	LCD.print(line2)
+	LCD.print(line2);
 }
