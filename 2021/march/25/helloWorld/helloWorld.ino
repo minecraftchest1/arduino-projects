@@ -20,7 +20,7 @@ void loop()
 	delay(WAIT);
 	printMessage(PG2LN1, PG2LN2);
 	delay(WAIT);
-	printMessage(PG3LN1, PG3,LN2);
+	printMessage(PG3LN1, PG3LN2);
 	delay(WAIT);
 	
 }
