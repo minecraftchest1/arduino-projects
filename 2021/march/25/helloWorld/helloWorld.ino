@@ -33,7 +33,8 @@ void loop()
 	delay(WAIT);
 	printMessage(PG4LN1, PG4LN2);
 	delay(WAIT);
-	
+	printMessage(PG5LN1, PG5LN2);
+	delay(WAIT);
 }
 
 void printMessage(String line1, String line2)
