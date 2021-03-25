@@ -2,10 +2,16 @@
 LiquidCrystal LCD(12,11,5,4,3,2);						// Initilize the LCD object
 #define HOMELN1 "Hello, World"
 #define HOMELN2 ""
+
 #define PG2LN1 "My name is:"
 #define PG2LN2 "Wyatt Jackson"
+
 #define PG3LN1 "Created by"
 #define PG3LN2 "Wyatt Jackson"
+
+#define PG4LN1 "Minecraftchest1"
+#define PG4LN2 "@outlook.com"
+
 #define WAIT 2500
 
 void setup() 
@@ -21,6 +27,8 @@ void loop()
 	printMessage(PG2LN1, PG2LN2);
 	delay(WAIT);
 	printMessage(PG3LN1, PG3LN2);
+	delay(WAIT);
+	printMessage(PG4LN1, PG4LN2);
 	delay(WAIT);
 	
 }
