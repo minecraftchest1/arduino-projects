@@ -16,36 +16,19 @@ void setup()
 
 void loop() 
 {
-	//LCD.print("Hello, World!");
-	//LCD.setCursor(0,1);
-	//LCD.print("My name is:");
-	//delay(250);									//Wait for 0.25 seconds
-
-	//LCD.setCursor(0,1);
-	//LCD.print("            ");
-	//LCD.setCursor(0,1);
-	//LCD.print("Wyatt Jackson   ");
-
-
-	
-	LCD.clear();
-	LCD.print(HOMELN1);
-	LCD.setCursor(0,1);
-	LCD.print(HOMELN2);
-	delay(WAIT);								//Wain 2.50 seconds
-	LCD.clear();
-	LCD.print(PG2LN1);
-	LCD.setCursor(0,1);
-	LCD.print(PG2LN2);
-	delay(WAIT);								//Wait 2.50 seconds
-	LCD.clear();
-	LCD.print(PG3LN1);
-	LCD.setCursor(0,1);
-	LCD.print(PG3LN2);
+	printMessage(HOMELN1, HOMELN2);	
+	delay(WAIT);
+	printMessage(PG2LN1, PG2LN2);
+	delay(WAIT);
+	printMessage(PG3LN1, PG3,LN2);
 	delay(WAIT);
 	
 }
 
 void printMessage(String line1, String line2)
 {
+	LCD.clear();
+	LCD.print(line1);
+	LCD.setCursor(0,1);
+	LCD.print(line2)
 }
