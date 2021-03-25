@@ -45,3 +45,7 @@ void loop()
 	delay(WAIT);
 	
 }
+
+void printMessage(string line1, string line2)
+{
+}
