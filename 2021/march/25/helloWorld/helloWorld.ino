@@ -46,6 +46,6 @@ void loop()
 	
 }
 
-void printMessage(string line1, string line2)
+void printMessage(String line1, String line2)
 {
 }
