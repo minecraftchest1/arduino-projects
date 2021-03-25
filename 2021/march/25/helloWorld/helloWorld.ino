@@ -13,7 +13,7 @@ LiquidCrystal LCD(12,11,5,4,3,2);						// Initilize the LCD object
 #define PG4LN2 "@outlook.com"
 
 #define PG5LN1 "Minecraftchest1"
-#define PG5LN2 ".wordpress.com
+#define PG5LN2 ".wordpress.com"
 
 #define WAIT 2500
 
